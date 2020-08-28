@@ -6,6 +6,12 @@ For example, if the parameters passed are (2, 6), the function should return [2,
 If you can, try writing it in only one line of code.
 */
 
-function findMultiples(integer, limit) {
-  //your code here
+const findMultiples = (integer, limit) => {
+  let array = [];
+  for(let i = integer; i < limit + 1; i++) {
+    if(i % integer === 0) {
+      array.push(i);
+    }
+  }
+  return array;
 }
